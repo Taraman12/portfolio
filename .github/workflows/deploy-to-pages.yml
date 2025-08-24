@@ -24,7 +24,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - run: npm run build && npm run export
+      - run: npm run build
         env:
           NODE_ENV: production
       - run: touch out/.nojekyll   # ensure GitHub Pages serves files starting with underscores
