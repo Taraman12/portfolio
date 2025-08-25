@@ -47,7 +47,7 @@ export default function Hero() {
                                 href="https://www.google.com/maps?q=Frankfurt+am+Main%2C+Germany"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 transition hover:bg-neutral-100"
+                                className="group inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
                             >
                                 <FiMapPin className="shrink-0 text-base group-hover:scale-110 transition" aria-hidden />
                                 <span>Frankfurt Main, Germany</span>
@@ -61,7 +61,7 @@ export default function Hero() {
                             <a
                                 href={`${prefix}/CV_Fabian_Kochsiek_En.pdf`}
                                 download
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition  hover:bg-neutral-100"
+                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition  hover:bg-neutral-100 dark:hover:bg-neutral-800"
                             >
                                 <FiDownload /> Resume
                             </a>
@@ -69,7 +69,7 @@ export default function Hero() {
                                 href="https://github.com/taraman12" // replace
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100"
+                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
                             >
                                 <FiGithub /> GitHub
                             </Link>
@@ -77,13 +77,13 @@ export default function Hero() {
                                 href="https://www.linkedin.com/in/fabian-kochsiek/" // replace
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100"
+                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
                             >
                                 <FiLinkedin /> LinkedIn
                             </Link>
                             <Link
                                 href="mailto:Fabian.Kochsiek@gmail.com"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100"
+                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
                             >
                                 <FiMail /> Email
                             </Link>
