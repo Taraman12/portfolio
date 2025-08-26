@@ -86,7 +86,7 @@ function SkillCard({ title, items }: { title: string; items: Skill[] }) {
 export default function Skills() {
     return (
         <section className="w-full">
-            <div className="mx-auto max-w-6xl px-6 py-12">
+            <div className="mx-auto max-w-6xl px-6">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <SkillCard
                         title="Fullstack"
