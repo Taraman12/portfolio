@@ -55,7 +55,6 @@ export default function Hero() {
                             </Link>
                         </div>
 
-
                         <h2 className="flex flex-wrap items-center text-gray-500 text-xl font-extrabold tracking-tight sm:text-xl lg:text-xl"> Key Skills</h2>
                         {/* Key Skills */}
                         <div className="flex flex-wrap items-center gap-3">
