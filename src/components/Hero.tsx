@@ -56,38 +56,10 @@ export default function Hero() {
 
 
 
-                        {/* Actions */}
-                        <div className="flex flex-wrap items-center gap-3 pt-2">
-                            <a
-                                href={`${prefix}/CV_Fabian_Kochsiek_En.pdf`}
-                                download
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition  hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiDownload /> Resume
-                            </a>
-                            <Link
-                                href="https://github.com/taraman12" // replace
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiGithub /> GitHub
-                            </Link>
-                            <Link
-                                href="https://www.linkedin.com/in/fabian-kochsiek/" // replace
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiLinkedin /> LinkedIn
-                            </Link>
-                            <Link
-                                href="mailto:Fabian.Kochsiek@gmail.com"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiMail /> Email
-                            </Link>
-                        </div>
+                        {/* Key Skills */}
+                        {/* <div className="flex flex-wrap items-center gap-3 pt-2">
+
+                        </div> */}
                     </div>
                 </div>
             </div>
