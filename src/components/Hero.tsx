@@ -3,8 +3,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FiMapPin, FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
 import { LuBrainCircuit } from "react-icons/lu";
+import { Item } from "./Item";
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -12,10 +13,10 @@ export default function Hero() {
     return (
         <section className="w-full">
             <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
-                <div className="grid items-center gap-10 md:grid-cols-3">
+                <div className="grid items-center gap-8 md:grid-cols-3">
                     {/* Left: Profile image */}
-                    <div className="order-1 md:order-none md:col-span-1">
-                        <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-full shadow-lg">
+                    <div className="order-0 md:order-none md:col-span-1">
+                        <div className="relative aspect-square w-full max-w-sm sm:max-w-xs overflow-hidden rounded-full shadow-lg">
                             <Image
                                 src={`${prefix}/Fabian_Kochsiek_round.png`}
                                 alt="Portrait"
@@ -30,14 +31,14 @@ export default function Hero() {
 
                     {/* Right: Text content */}
                     <div
-                        className="md:col-span-2 space-y-6"
+                        className="md:col-span-2 space-y-4"
                     >
                         {/* Headline */}
                         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                             Hey, I'm <span className="text-primary">Fabian👋</span>
                         </h1>
 
-                        <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground border border-neutral-200 dark:border-neutral-800 rounded-2xl px-3 py-1.5 w-fit">
+                        <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground border border-neutral-200 dark:border-neutral-800 rounded-2xl px-3 py-1.5 w-fit hover:bg-neutral-100 dark:hover:bg-neutral-800">
                             <LuBrainCircuit /> AI Engineer @ CGI
                         </div>
 
@@ -54,39 +55,18 @@ export default function Hero() {
                             </Link>
                         </div>
 
-
-
-                        {/* Actions */}
-                        <div className="flex flex-wrap items-center gap-3 pt-2">
-                            <a
-                                href={`${prefix}/CV_Fabian_Kochsiek_En.pdf`}
-                                download
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition  hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiDownload /> Resume
-                            </a>
-                            <Link
-                                href="https://github.com/taraman12" // replace
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiGithub /> GitHub
-                            </Link>
-                            <Link
-                                href="https://www.linkedin.com/in/fabian-kochsiek/" // replace
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiLinkedin /> LinkedIn
-                            </Link>
-                            <Link
-                                href="mailto:Fabian.Kochsiek@gmail.com"
-                                className="inline-flex items-center gap-2 rounded-2xl border border-neutral-200 dark:border-neutral-800 px-4 py-2 text-sm font-medium transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiMail /> Email
-                            </Link>
+                        <h2 className="flex flex-wrap items-center text-gray-500 text-xl font-extrabold tracking-tight sm:text-xl lg:text-xl"> Key Skills</h2>
+                        {/* Key Skills */}
+                        <div className="flex flex-wrap items-center gap-3">
+                            <Item>Python</Item>
+                            <Item>Data Science</Item>
+                            <Item>Machine Learning</Item>
+                            <Item>Deep Learning</Item>
+                            <Item>GenAI</Item>
+                            <Item>AI-Agents</Item>
+                            <Item>API Development</Item>
+                            <Item>Remote Sensing</Item>
+                            <Item>Image Segmentation</Item>
                         </div>
                     </div>
                 </div>
