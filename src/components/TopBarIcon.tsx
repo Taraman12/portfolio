@@ -1,6 +1,7 @@
 "use client";
 
 import { IconType } from "react-icons";
+import { useEffect, useState } from "react";
 
 interface TopBarIconProps {
     Icon: IconType;
@@ -10,6 +11,12 @@ interface TopBarIconProps {
 }
 
 export function TopBarIcon({ Icon, label, href, onClick }: TopBarIconProps) {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
     const commonProps = {
         "aria-label": label,
         className:
@@ -20,14 +27,14 @@ export function TopBarIcon({ Icon, label, href, onClick }: TopBarIconProps) {
     if (href) {
         return (
             <a href={href} target="_blank" rel="noopener noreferrer" {...commonProps}>
-                <Icon />
+                {isClient && <Icon />}
             </a>
         );
     }
 
     return (
         <button {...commonProps} className={`${commonProps.className} cursor-pointer`}>
-            <Icon />
+            {isClient && <Icon />}
         </button>
     );
 }
