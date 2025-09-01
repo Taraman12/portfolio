@@ -8,7 +8,7 @@ import { TopBarItem } from "./TopBarItem";
 
 export function TopBar() {
     return (
-        <div className="w-full h-10 flex items-center justify-end pt-2">
+        <div className="w-full h-14 flex items-center justify-end dark:bg-neutral-900 bg-gray-50">
             <TopBarItem>
                 <TopBarMenu />
             </TopBarItem>
