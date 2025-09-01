@@ -15,8 +15,8 @@ export default function Hero() {
             <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
                 <div className="grid items-center gap-8 md:grid-cols-3">
                     {/* Left: Profile image */}
-                    <div className="order-0 md:order-none md:col-span-1">
-                        <div className="relative aspect-square w-full max-w-sm sm:max-w-xs overflow-hidden rounded-full shadow-lg">
+                    <div className="order-0 md:order-none md:col-span-1 flex justify-center">
+                        <div className="relative aspect-square w-72 h-72 overflow-hidden rounded-full shadow-lg">
                             <Image
                                 src={`${prefix}/Fabian_Kochsiek_round.png`}
                                 alt="Portrait"
