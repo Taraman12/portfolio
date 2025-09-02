@@ -13,11 +13,10 @@
                     "href": "https://www.enbw.com/",
                     "logo": "/logos/enbw.svg",
                     "description": [
-                        "Software Engineer in the GenAI domain with Python and TypeScript",
-                        "Developed a PoC for knowledge management using RAG, Python, Azure Functions, and LLMs to enhance information retrieval and organizational knowledge sharing",
-                        "Co-developed an MVP AIHub (Backend-API with Next.js) to integrate multiple AI models via a Unified API and connect CustomGPTs",
-                        "Contributed to a PoC using Obsidian (Electron App) for AI-driven knowledge management",
-                        "Evaluated emerging AI technologies such as agent platforms (Parloa, Beam.ai, Azure AI Foundry, MS Copilot Studio), coding agents (Aider, GitHub Copilot Agent), and RAG/GraphRAG approaches",
+                        "Built PoC for knowledge management using RAG, Python, Azure Functions, and LLMs to improve information retrieval",
+                        "Co-developed MVP AIHub (Backend API, Next.js) integrating multiple AI models via a unified API and CustomGPTs",
+                        "Contributed to AI-driven knowledge management PoC with Obsidian (Electron)",
+                        "esearched AI tech: agent platforms (Parloa, Beam.ai, Azure AI Foundry, MS Copilot Studio), coding agents (Aider, GitHub Copilot Agent), and RAG/GraphRAG",
                         "Tools: Python, TS/Html/CSS, Azure Plattform/DevOps, Azure Pipelines, Azure Functions, Static Web App, StorageAccount, CosmosDB, EntraID, Application Insights, Postman/Bruno, Bicep (IaC)"
                     ]
                 },
