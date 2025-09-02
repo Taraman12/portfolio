@@ -11,12 +11,13 @@ interface TopBarIconProps {
 }
 
 export function TopBarIcon({ Icon, label, href, onClick }: TopBarIconProps) {
+
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
     }, []);
-
+    
     const commonProps = {
         "aria-label": label,
         className:

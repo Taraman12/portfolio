@@ -2,7 +2,9 @@
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import SectionDivider from "@/components/SectionDivider";
+
 import Experience from "@/components/Experience";
+
 
 export default function Home() {
   return (
