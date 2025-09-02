@@ -3,6 +3,9 @@ import { Experience } from "@/lib/schemas";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./Avatar";
 import SubTimelineItem from "./SubTimelineItem";
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 interface Props {
     experience: Experience;
 }
@@ -20,7 +23,7 @@ export default function TimelineItem({ experience }: Props) {
             >
                 <Avatar className="size-12 border">
                     <AvatarImage
-                        src={logo}
+                        src={`${prefix}${logo}`}
                         alt={name}
                         className="bg-background object-contain"
                     />
