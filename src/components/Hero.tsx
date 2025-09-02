@@ -62,11 +62,11 @@ export default function Hero() {
                             <Item>Data Science</Item>
                             <Item>Machine Learning</Item>
                             <Item>Deep Learning</Item>
+                            <Item>Computer Vision</Item>
                             <Item>GenAI</Item>
                             <Item>AI-Agents</Item>
                             <Item>API Development</Item>
                             <Item>Remote Sensing</Item>
-                            <Item>Image Segmentation</Item>
                         </div>
                     </div>
                 </div>
