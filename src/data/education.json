@@ -1,0 +1,72 @@
+{
+    "education": [
+        {
+            "name": "Julius Maximilian University of Wuerzburg",
+            "href": "https://www.uni-wuerzburg.de/en",
+            "title": "Information Systems (MSc)",
+            "logo": "/uni-wuerzburg.png",
+            "start": "Sep 2020",
+            "end": "Oct 2023",
+            "description": [
+                "Seminar papers: Data Mining, Reinforcement Learning",
+                "Project seminar: Dashboard development with Vue.js and Flask-API (Python)",
+                "Thesis: Continues solar park detection from satellite imagery with Deep Learning"
+            ],
+            "links": [
+                {
+                    "name": "Degree programmes",
+                    "href": "https://www.uni-wuerzburg.de/en/international/studying-in-wuerzburg/degree-programmes/",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
+            "name": "Università di Siena",
+            "href": "https://en.unisi.it/",
+            "title": "Semester Abroad",
+            "logo": "/unisi.png",
+            "start": "Feb 2022",
+            "end": "Jul 2022",
+            "links": [
+                {
+                    "name": "Information for international students",
+                    "href": "https://en.unisi.it/international/information-institution",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
+            "name": "Julius Maximilian University of Wuerzburg",
+            "href": "https://www.uni-wuerzburg.de/en",
+            "title": "Business and Economics (BSc)",
+            "logo": "/uni-wuerzburg.png",
+            "start": "Oct 2016",
+            "end": "Sep 2020",
+            "description": [
+                "Thesis: Robust optimization of a factor-based asset allocation"
+            ],
+            "links": [
+                {
+                    "name": "Bachelor programmes",
+                    "href": "https://www.uni-wuerzburg.de/en/studium/angebot/abschluss/bachelor/",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
+            "name": "Vancouver Island University",
+            "href": "https://www.viu.ca/",
+            "title": "Semester Abroad",
+            "logo": "/viu.png",
+            "start": "Sep 2018",
+            "end": "Dec 2018",
+            "links": [
+                {
+                    "name": "VIU International",
+                    "href": "https://international.viu.ca/",
+                    "icon": "globe"
+                }
+            ]
+        }
+    ]
+}
