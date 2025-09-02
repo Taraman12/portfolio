@@ -60,7 +60,7 @@ const management: Skill[] = [
 
 function SkillCard({ title, items }: { title: string; items: Skill[] }) {
     return (
-        <div className="rounded-3xl border border-neutral-400 dark:border-neutral-600 bg-gray-100 dark:bg-neutral-800 p-6">
+        <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 shadow p-6">
             <h3 className="text-xl font-semibold text-center">{title}</h3>
 
             <ul className="mt-5 flex flex-wrap items-center gap-4">
@@ -72,7 +72,7 @@ function SkillCard({ title, items }: { title: string; items: Skill[] }) {
                             className="group inline-flex flex-col items-center justify-center p-1 hover:scale-105 transition-transform"
                         >
                             <Icon className="h-10 w-10" style={{ color }} />
-                            <span className="mt-2 text-xs text-center text-gray-100 dark:text-neutral-800 transition-colors duration-150 group-hover:text-black dark:group-hover:text-white">
+                            <span className="mt-2 text-xs text-center text-gray-50 dark:text-neutral-900 transition-colors duration-150 group-hover:text-black dark:group-hover:text-white">
                                 {name}
                             </span>
                         </a>
