@@ -8,7 +8,7 @@ import {
     // Frameworks
     SiFastapi, SiPytorch, SiScikitlearn, SiNumpy, SiPandas, SiGeopandas, SiReact, SiNextdotjs, SiVuedotjs, SiTailwindcss,
     // Cloud & DevOps
-    SiAmazonwebservices, SiLinux, SiDocker,
+    SiAmazonwebservices, SiLinux, SiDocker, SiGithubactions,
     // Management / tools
     SiJira, SiConfluence,
 } from "react-icons/si";
@@ -49,7 +49,7 @@ const frameworks: Skill[] = [
 const devops: Skill[] = [
     { name: "Azure", Icon: VscAzure, color: "#0078D4" },
     { name: "AWS", Icon: SiAmazonwebservices, color: "#FF9900" },
-    { name: "GitHub Actions", Icon: VscGithubAction, color: "#181717", invertInDarkMode: true },
+    { name: "GitHub Actions", Icon: SiGithubactions, color: "#181717", invertInDarkMode: true },
     { name: "Linux", Icon: SiLinux, color: "#FCC624" },
     { name: "Docker", Icon: SiDocker, color: "#2496ED" },
 ];
