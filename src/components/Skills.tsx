@@ -14,8 +14,9 @@ import {
 } from "react-icons/si";
 import { PiMicrosoftExcelLogo } from "react-icons/pi";
 import { TbSql } from "react-icons/tb";
-import { VscAzure, VscAzureDevops } from "react-icons/vsc";
-type Skill = { name: string; Icon: IconType; color: string; href?: string };
+import { cn } from "@/lib/utils";
+import { VscAzure, VscAzureDevops, VscGithubAction, VscGithub } from "react-icons/vsc";
+type Skill = { name: string; Icon: IconType; color: string; href?: string, invertInDarkMode?: boolean };
 
 const fullstack: Skill[] = [
     { name: "Python", Icon: SiPython, color: "#3776AB" },
@@ -38,7 +39,7 @@ const frameworks: Skill[] = [
     { name: "NumPy", Icon: SiNumpy, color: "#013243" },
     { name: "Pandas", Icon: SiPandas, color: "#150458" },
     { name: "GeoPandas", Icon: SiGeopandas, color: "#2E8B57" },
-    { name: "Next.js", Icon: SiNextdotjs, color: "#000000" },
+    { name: "Next.js", Icon: SiNextdotjs, color: "#000000", invertInDarkMode: true },
     { name: "React", Icon: SiReact, color: "#61DAFB" },
     { name: "Vue", Icon: SiVuedotjs, color: "#41B883" },
     { name: "Tailwind", Icon: SiTailwindcss, color: "#06B6D4" },
@@ -48,31 +49,33 @@ const frameworks: Skill[] = [
 const devops: Skill[] = [
     { name: "Azure", Icon: VscAzure, color: "#0078D4" },
     { name: "AWS", Icon: SiAmazonwebservices, color: "#FF9900" },
+    { name: "GitHub Actions", Icon: VscGithubAction, color: "#181717", invertInDarkMode: true },
     { name: "Linux", Icon: SiLinux, color: "#FCC624" },
     { name: "Docker", Icon: SiDocker, color: "#2496ED" },
 ];
 
 const management: Skill[] = [
     { name: "Azure DevOps", Icon: VscAzureDevops, color: "#0078D4" },
+    { name: "GitHub", Icon: VscGithub, color: "#181717", invertInDarkMode: true },
     { name: "Jira", Icon: SiJira, color: "#2684FF" },
     { name: "Confluence", Icon: SiConfluence, color: "#172B4D" },
 ];
 
 function SkillCard({ title, items }: { title: string; items: Skill[] }) {
     return (
-        <div className="rounded-3xl border border-neutral-400 dark:border-neutral-600 bg-gray-100 dark:bg-neutral-800 p-6">
+        <div className="rounded-3xl border border-neutral-200 dark:border-neutral-800 shadow p-6">
             <h3 className="text-xl font-semibold text-center">{title}</h3>
 
-            <ul className="mt-5 flex flex-wrap items-center gap-4">
-                {items.map(({ name, Icon, color, href }) => (
+            <ul className="mt-5 flex flex-wrap items-center justify-center gap-4">
+                {items.map(({ name, Icon, color, href, invertInDarkMode }) => (
                     <li key={name}>
                         <a
                             href={href || "#"}
                             aria-label={name}
                             className="group inline-flex flex-col items-center justify-center p-1 hover:scale-105 transition-transform"
                         >
-                            <Icon className="h-10 w-10" style={{ color }} />
-                            <span className="mt-2 text-xs text-center text-gray-100 dark:text-neutral-800 transition-colors duration-150 group-hover:text-black dark:group-hover:text-white">
+                            <Icon className={cn("h-10 w-10", invertInDarkMode && "dark:invert")} style={{ color }} />
+                            <span className="mt-2 text-xs text-center text-gray-50 dark:text-neutral-900 transition-colors duration-150 group-hover:text-black dark:group-hover:text-gray-50">
                                 {name}
                             </span>
                         </a>
@@ -86,7 +89,7 @@ function SkillCard({ title, items }: { title: string; items: Skill[] }) {
 export default function Skills() {
     return (
         <section className="w-full">
-            <div className="mx-auto max-w-6xl px-6">
+            <div className="mx-auto">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <SkillCard
                         title="Fullstack"

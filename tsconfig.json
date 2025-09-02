@@ -29,6 +29,12 @@
       ],
       "@/components/*": [
         "components/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/data/*": [
+        "data/*"
       ]
     }
   },

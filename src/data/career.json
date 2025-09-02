@@ -1,0 +1,99 @@
+{
+    "career": [
+        {
+            "name": "CGI Deutschland B.V. & Co. KG",
+            "href": "https://www.cgi.com/de/de",
+            "title": "AI Engineer, IT Consultant",
+            "logo": "/logos/cgi.svg",
+            "start": "Jun 2024",
+            "end": "Present",
+            "projects": [
+                {
+                    "name": "EnBW AG, Competence Center AI – AI Engineer",
+                    "href": "https://www.enbw.com/",
+                    "logo": "/logos/enbw.svg",
+                    "description": [
+                        "Built PoC for knowledge management using RAG, Python, Azure Functions, and LLMs to improve information retrieval",
+                        "Co-developed MVP AIHub (Backend API, Next.js) integrating multiple AI models via a unified API and CustomGPTs",
+                        "Contributed to AI-driven knowledge management PoC with Obsidian (Electron)",
+                        "esearched AI tech: agent platforms (Parloa, Beam.ai, Azure AI Foundry, MS Copilot Studio), coding agents (Aider, GitHub Copilot Agent), and RAG/GraphRAG",
+                        "Tools: Python, TS/Html/CSS, Azure Plattform/DevOps, Azure Pipelines, Azure Functions, Static Web App, StorageAccount, CosmosDB, EntraID, Application Insights, Postman/Bruno, Bicep (IaC)"
+                    ]
+                },
+                {
+                    "name": "KfW – Project Management Office Representation",
+                    "href": "https://www.kfw.de/kfw.de.html",
+                    "logo": "/logos/kfw.svg",
+                    "description": [
+                        "Temporary PMO support, ensuring project continuity and stakeholder coordination"
+                    ]
+                },
+                {
+                    "name": "Internal Innovation Project – AI DocReport",
+                    "href": "https://www.cgi.com/de/de",
+                    "logo": "/logos/cgi.svg",
+                    "description": [
+                        "Contributed to the development of an internal CGI IP tool for summarizing hospital medical reports",
+                        "Tools: Python, Azure, GitLab, PII, LLMs, Ollama"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "University of Wuerzburg",
+            "href": "https://www.wiwi.uni-wuerzburg.de/wise/lehre/sose-2025/bachelor/e-business/",
+            "title": "Tutor E-Business",
+            "logo": "/logos/uni-wue.svg",
+            "start": "Apr 2023",
+            "end": "Jul 2023",
+            "description": [
+                "Organized tutor lectures and supported students"
+            ],
+            "links": [
+                {
+                    "name": "Chair / Course page",
+                    "href": "https://www.wiwi.uni-wuerzburg.de/wise/lehre/sose-2025/bachelor/e-business/",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
+            "name": "Allianz AG",
+            "href": "https://www.allianz.com/en.html",
+            "title": "Internship, Risk Management Investments",
+            "logo": "/logos/allianz.svg",
+            "start": "May 2020",
+            "end": "Oct 2020",
+            "description": [
+                "Data preparation and analysis in the investment area",
+                "Support with the implementation of an interface with Python as well as VBA"
+            ],
+            "links": [
+                {
+                    "name": "Allianz (About us)",
+                    "href": "https://www.allianz.com/en/about-us.html",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
+            "name": "VP Bank & VP Fund Solutions SA",
+            "href": "https://www.vpbank.com/en/vpfundsolutions/about-us/portrait/location-luxembourg",
+            "title": "Internship, Risk management and controlling",
+            "logo": "/logos/vp-bank.svg",
+            "start": "Jan 2019",
+            "end": "Mar 2019",
+            "description": [
+                "Calculation of key (credit) risk figures like VaR, Leverage, CRD IV/CRR, etc.",
+                "Optimization of MS-Excel based tools"
+            ],
+            "links": [
+                {
+                    "name": "VP Fund Solutions",
+                    "href": "https://www.vpbank.com/en/vpfundsolutions",
+                    "icon": "globe"
+                }
+            ]
+        }
+    ]
+}
