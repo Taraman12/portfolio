@@ -9,6 +9,14 @@ const iconLink = z.object({
 });
 export type IconLink = z.infer<typeof iconLink>;
 
+export const subExperienceSchema = z.object({
+    name: z.string(),
+    logo: z.string(),
+    href: z.string(),
+    description: z.array(z.string()),
+});
+
+
 const project = z.object({
     name: z.string(),
     description: z.string(),
@@ -28,6 +36,7 @@ const experience = z.object({
     start: z.string(),
     end: z.string().optional(),
     description: z.array(z.string()).optional(),
+    projects: z.array(subExperienceSchema).optional(),
     links: z.array(iconLink).optional(),
 });
 export type Experience = z.infer<typeof experience>;
