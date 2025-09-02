@@ -28,14 +28,16 @@ export default function TimelineItem({ experience }: Props) {
                 </Avatar>
             </Link>
             <div className="flex flex-1 flex-col justify-start gap-1">
-                {start && (
-                    <time className="text-xs text-muted-foreground">
-                        <span>{start}</span>
-                        <span>{" - "}</span>
-                        <span>{end ? end : "Present"}</span>
-                    </time>
-                )}
-                <h2 className="font-semibold leading-none">{name}</h2>
+                <div className="flex items-baseline justify-between">
+                    <h2 className="font-semibold leading-none">{name}</h2>
+                    {start && (
+                        <time className="text-xs text-muted-foreground pr-4">
+                            <span>{start}</span>
+                            <span>{" - "}</span>
+                            <span>{end ? end : "Present"}</span>
+                        </time>
+                    )}
+                </div>
                 {title && <p className="text-sm text-muted-foreground">{title}</p>}
                 {description && (
                     <ul className="ml-4 list-outside list-disc">
