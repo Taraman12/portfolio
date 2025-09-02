@@ -3,6 +3,7 @@ import Link from "next/link";
 import { z } from "zod";
 import { Avatar, AvatarFallback, AvatarImage } from "./Avatar";
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 interface Props {
     experience: z.infer<typeof subExperienceSchema>;
 }
@@ -19,7 +20,7 @@ export default function SubTimelineItem({ experience }: Props) {
             >
                 <Avatar className="size-12 border">
                     <AvatarImage
-                        src={logo}
+                        src={`${prefix}${logo}`}
                         alt={name}
                         className="bg-background object-contain"
                     />
