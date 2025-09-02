@@ -4,7 +4,7 @@
             "name": "Julius Maximilian University of Wuerzburg",
             "href": "https://www.uni-wuerzburg.de/en",
             "title": "Information Systems (MSc)",
-            "logo": "/uni-wuerzburg.png",
+            "logo": "/logos/uni-wue.svg",
             "start": "Sep 2020",
             "end": "Oct 2023",
             "description": [
@@ -24,7 +24,7 @@
             "name": "Università di Siena",
             "href": "https://en.unisi.it/",
             "title": "Semester Abroad",
-            "logo": "/unisi.png",
+            "logo": "/logos/unisi.png",
             "start": "Feb 2022",
             "end": "Jul 2022",
             "links": [
@@ -39,7 +39,7 @@
             "name": "Julius Maximilian University of Wuerzburg",
             "href": "https://www.uni-wuerzburg.de/en",
             "title": "Business and Economics (BSc)",
-            "logo": "/uni-wuerzburg.png",
+            "logo": "/logos/uni-wue.svg",
             "start": "Oct 2016",
             "end": "Sep 2020",
             "description": [
@@ -57,7 +57,7 @@
             "name": "Vancouver Island University",
             "href": "https://www.viu.ca/",
             "title": "Semester Abroad",
-            "logo": "/viu.png",
+            "logo": "/logos/viu.svg",
             "start": "Sep 2018",
             "end": "Dec 2018",
             "links": [
