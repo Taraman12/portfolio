@@ -1,9 +1,8 @@
-
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import SectionDivider from "@/components/SectionDivider";
-
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 
 
 export default function Home() {
@@ -15,6 +14,8 @@ export default function Home() {
         <Experience />
         <SectionDivider>Tech Stack</SectionDivider>
         <Skills />
+        <SectionDivider>Projects</SectionDivider>
+        <Projects />
       </main>
     </div>
   );
