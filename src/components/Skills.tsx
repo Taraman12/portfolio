@@ -15,7 +15,7 @@ import {
 import { PiMicrosoftExcelLogo } from "react-icons/pi";
 import { TbSql } from "react-icons/tb";
 import { cn } from "@/lib/utils";
-import { VscAzure, VscAzureDevops, VscGithubAction, VscGithub } from "react-icons/vsc";
+import { VscAzure, VscAzureDevops, VscGithub } from "react-icons/vsc";
 type Skill = { name: string; Icon: IconType; color: string; href?: string, invertInDarkMode?: boolean };
 
 const fullstack: Skill[] = [
