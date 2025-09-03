@@ -13,10 +13,10 @@
                     "href": "https://www.enbw.com/",
                     "logo": "/logos/enbw.svg",
                     "description": [
-                        "Built PoC for knowledge management using RAG to improve information retrieval",
-                        "Co-developed MVP AIHub integrating multiple AI models via a unified API endpoint and CustomGPTs",
-                        "Contributed to AI-driven knowledge management PoC with Obsidian",
-                        "Researched AI tech: agent platforms, coding agents, and RAG/GraphRAG"
+                        "Built PoC for knowledge management using RAG to improve information retrieval in internal wiki",
+                        "Co-developed MVP AIHub integrating multiple AI models via a unified API endpoint and CustomGPTs to streamline AI tool access company-wide",
+                        "Contributed to AI-driven knowledge management PoC with Obsidian for Digital Workplace team",
+                        "Researched AI tech: agent platforms, coding agents, and RAG/GraphRAG to support internal AI initiatives"
                     ],
                     "tools": [
                         "Python",
