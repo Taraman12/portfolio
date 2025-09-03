@@ -3,6 +3,7 @@ import { Experience } from "@/lib/schemas";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./Avatar";
 import SubTimelineItem from "./SubTimelineItem";
+import { Badge } from "./ui/Badge";
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -11,7 +12,7 @@ interface Props {
 }
 
 export default function TimelineItem({ experience }: Props) {
-    const { name, href, title, logo, start, end, description, links } =
+    const { name, href, title, logo, start, end, description, tools } =
         experience;
 
     return (
@@ -57,6 +58,15 @@ export default function TimelineItem({ experience }: Props) {
                             <SubTimelineItem key={id} experience={project} />
                         ))}
                     </ul>
+                )}
+                {tools && tools.length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-1">
+                        {tools.map((tool) => (
+                            <Badge key={tool} variant="secondary" className="px- py-0.5">
+                                {tool}
+                            </Badge>
+                        ))}
+                    </div>
                 )}
             </div>
         </li>

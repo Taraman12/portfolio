@@ -13,11 +13,19 @@
                     "href": "https://www.enbw.com/",
                     "logo": "/logos/enbw.svg",
                     "description": [
-                        "Built PoC for knowledge management using RAG, Python, Azure Functions, and LLMs to improve information retrieval",
-                        "Co-developed MVP AIHub (Backend API, Next.js) integrating multiple AI models via a unified API and CustomGPTs",
-                        "Contributed to AI-driven knowledge management PoC with Obsidian (Electron)",
-                        "esearched AI tech: agent platforms (Parloa, Beam.ai, Azure AI Foundry, MS Copilot Studio), coding agents (Aider, GitHub Copilot Agent), and RAG/GraphRAG",
-                        "Tools: Python, TS/Html/CSS, Azure Plattform/DevOps, Azure Pipelines, Azure Functions, Static Web App, StorageAccount, CosmosDB, EntraID, Application Insights, Postman/Bruno, Bicep (IaC)"
+                        "Built PoC for knowledge management using RAG to improve information retrieval",
+                        "Co-developed MVP AIHub integrating multiple AI models via a unified API endpoint and CustomGPTs",
+                        "Contributed to AI-driven knowledge management PoC with Obsidian",
+                        "Researched AI tech: agent platforms, coding agents, and RAG/GraphRAG"
+                    ],
+                    "tools": [
+                        "Python",
+                        "TypeScript",
+                        "Azure",
+                        "CI/CD",
+                        "Next.js",
+                        "Postman/Bruno",
+                        "Bicep"
                     ]
                 },
                 {
@@ -33,8 +41,15 @@
                     "href": "https://www.cgi.com/de/de",
                     "logo": "/logos/cgi.svg",
                     "description": [
-                        "Contributed to the development of an internal CGI IP tool for summarizing hospital medical reports",
-                        "Tools: Python, Azure, GitLab, PII, LLMs, Ollama"
+                        "Contributed to the development of an internal CGI IP tool for summarizing hospital medical reports"
+                    ],
+                    "tools": [
+                        "Python",
+                        "Azure",
+                        "GitLab",
+                        "PII",
+                        "LLMs",
+                        "Ollama"
                     ]
                 }
             ]
@@ -48,13 +63,6 @@
             "end": "Jul 2023",
             "description": [
                 "Organized tutor lectures and supported students"
-            ],
-            "links": [
-                {
-                    "name": "Chair / Course page",
-                    "href": "https://www.wiwi.uni-wuerzburg.de/wise/lehre/sose-2025/bachelor/e-business/",
-                    "icon": "globe"
-                }
             ]
         },
         {
@@ -68,12 +76,10 @@
                 "Data preparation and analysis in the investment area",
                 "Support with the implementation of an interface with Python as well as VBA"
             ],
-            "links": [
-                {
-                    "name": "Allianz (About us)",
-                    "href": "https://www.allianz.com/en/about-us.html",
-                    "icon": "globe"
-                }
+            "tools": [
+                "Python",
+                "VBA",
+                "MS Excel"
             ]
         },
         {
@@ -87,12 +93,9 @@
                 "Calculation of key (credit) risk figures like VaR, Leverage, CRD IV/CRR, etc.",
                 "Optimization of MS-Excel based tools"
             ],
-            "links": [
-                {
-                    "name": "VP Fund Solutions",
-                    "href": "https://www.vpbank.com/en/vpfundsolutions",
-                    "icon": "globe"
-                }
+            "tools": [
+                "VBA",
+                "MS Excel"
             ]
         }
     ]

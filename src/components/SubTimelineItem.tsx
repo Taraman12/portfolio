@@ -2,6 +2,7 @@ import { subExperienceSchema } from "@/lib/schemas";
 import Link from "next/link";
 import { z } from "zod";
 import { Avatar, AvatarFallback, AvatarImage } from "./Avatar";
+import { Badge } from "./ui/Badge";
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 interface Props {
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export default function SubTimelineItem({ experience }: Props) {
-    const { name, href, logo, description } = experience;
+    const { name, href, logo, description, tools } = experience;
 
     return (
         <li className="relative ml-10 py-4">
@@ -37,6 +38,15 @@ export default function SubTimelineItem({ experience }: Props) {
                             </li>
                         ))}
                     </ul>
+                )}
+                {tools && tools.length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-1">
+                        {tools.map((tool) => (
+                            <Badge key={tool} variant="secondary" className="px- py-0.5">
+                                {tool}
+                            </Badge>
+                        ))}
+                    </div>
                 )}
             </div>
         </li>
