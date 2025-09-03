@@ -19,13 +19,13 @@ export default function TimelineItem({ experience }: Props) {
             <Link
                 href={href}
                 target="_blank"
-                className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
+                className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
             >
                 <Avatar className="size-12 border">
                     <AvatarImage
                         src={`${prefix}${logo}`}
                         alt={name}
-                        className="bg-background object-contain"
+                        className="object-contain"
                     />
                     <AvatarFallback>{name[0]}</AvatarFallback>
                 </Avatar>
