@@ -1,4 +1,3 @@
-import { Github } from "lucide-react";
 import { Card } from "./ui/Card";
 import { MdOutlineSatelliteAlt } from "react-icons/md";
 import { IoMusicalNotesOutline } from "react-icons/io5";
@@ -8,8 +7,8 @@ const projects = [
     {
         title: "Solar park detection",
         description:
-            "Python project which leverages various libraries like PyTorch, Numpy and GeoPandas to continuously detect solar parks in freely available satellite imagery from Sentinel-2 via an API from ESA. Detected solar parks are stored via FastAPI in a PostgreSQL database and the data can be inspected in a Vue.js based frontend. The Tools runs with Docker autonomously in the AWS Cloud",
-        imageSrc: `${prefix}/images/solar-park-project.webp`,
+            "Python project which detects solar parks in satellite images using deep learning",
+        imageSrc: `${prefix}/32UMD_679_2018-7-27.webp`,
         imageAlt: "Solar Park Detection Project",
         href: "https://github.com", // Replace with your project's GitHub URL
         icon: <MdOutlineSatelliteAlt size={32} />,
@@ -18,13 +17,13 @@ const projects = [
         title: "Spotify Mining",
         description:
             "Python project which analyses music tracks from Spotify regarding their popularity",
-        imageSrc: `${prefix}/images/spotify-mining-project.webp`,
+        imageSrc: `${prefix}/Correlation_matrix_features.webp`,
         imageAlt: "Spotify Mining Project",
         href: "https://github.com", // Replace with your project's GitHub URL
         icon: <IoMusicalNotesOutline size={32} />,
-    },
+    }
 ];
-
+// SHAP_impact_on_output.webp
 export default function Projects() {
     return (
         <section className="w-full">
