@@ -7,7 +7,7 @@ const projects = [
     {
         title: "Solar park detection",
         description:
-            "Python project which detects solar parks in satellite images using deep learning",
+            "Fullstack application, detecting solar parks in satellite images using deep learning, running in the cloud",
         imageSrc: `${prefix}/32UMD_679_2018-7-27.webp`,
         imageAlt: "Solar Park Detection Project",
         href: "https://github.com", // Replace with your project's GitHub URL
@@ -16,14 +16,14 @@ const projects = [
     {
         title: "Spotify Mining",
         description:
-            "Python project which analyses music tracks from Spotify regarding their popularity",
+            "Analyses music tracks from Spotify regarding their popularity, leveraging machine learning",
         imageSrc: `${prefix}/Correlation_matrix_features.webp`,
         imageAlt: "Spotify Mining Project",
         href: "https://github.com", // Replace with your project's GitHub URL
         icon: <IoMusicalNotesOutline size={32} />,
     }
 ];
-// SHAP_impact_on_output.webp
+
 export default function Projects() {
     return (
         <section className="w-full">
