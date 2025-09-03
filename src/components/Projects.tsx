@@ -10,7 +10,7 @@ const projects = [
             "Fullstack application, detecting solar parks in satellite images using deep learning, running in the cloud",
         imageSrc: `${prefix}/32UMD_679_2018-7-27.webp`,
         imageAlt: "Solar Park Detection Project",
-        href: "https://github.com", // Replace with your project's GitHub URL
+        href: "https://github.com/Taraman12/Solarpark-detection",
         icon: <MdOutlineSatelliteAlt size={32} />,
     },
     {
@@ -19,7 +19,7 @@ const projects = [
             "Analyses music tracks from Spotify regarding their popularity, leveraging machine learning",
         imageSrc: `${prefix}/Correlation_matrix_features.webp`,
         imageAlt: "Spotify Mining Project",
-        href: "https://github.com", // Replace with your project's GitHub URL
+        href: "https://github.com/Taraman12/Spotify-Mining",
         icon: <IoMusicalNotesOutline size={32} />,
     }
 ];
