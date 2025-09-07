@@ -10,7 +10,7 @@ const SectionDivider: React.FC<DividerProps> = ({ children, className }) => {
     return (
         <h2
             className={cn(
-                "w-full text-center text-xl font-extrabold tracking-tight sm:text-2xl lg:text-3xl pt-8",
+                "w-full text-center text-xl font-extrabold tracking-tight sm:text-2xl lg:text-3xl p-8",
                 className
             )}
         >
