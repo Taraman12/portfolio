@@ -10,7 +10,7 @@ export function TopBar() {
     return (
         <div className="w-full dark:bg-neutral-900 bg-gray-50">
             {/* match content edges with main container */}
-            <div className="mx-auto flex h-14 w-full max-w-5xl items-center px-4 md:px-0">
+            <div className="mx-auto flex h-14 w-full max-w-5xl items-center px-4">
                 {/* Navigation (left) */}
                 <nav className="flex items-center mr-auto" aria-label="Primary">
                     <TopBarItem>
