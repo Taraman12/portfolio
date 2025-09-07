@@ -1,13 +1,13 @@
 "use client";
 
-
 import Image from "next/image";
 import Link from "next/link";
 import { FiMapPin } from "react-icons/fi";
 import { LuBrainCircuit } from "react-icons/lu";
-import { Item } from "./Item";
+import { Item } from "./Item"
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 
 export default function Hero() {
     return (
@@ -23,50 +23,53 @@ export default function Hero() {
                                 fill
                                 priority
                                 className="object-cover"
-                                style={{ transform: 'scale(1.01)' }}
+                                style={{ transform: "scale(1.01)" }}
                             />
                         </div>
                     </div>
 
-
                     {/* Right: Text content */}
-                    <div
-                        className="md:col-span-2 space-y-4"
-                    >
+                    <div className="md:col-span-2 space-y-8">
                         {/* Headline */}
-                        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                        <h1 className="font-extrabold tracking-tight lg:text-6xl sm:text-5xl text-4xl">
                             Hey, I'm <span className="text-primary">Fabian👋</span>
                         </h1>
 
-                        <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground border border-neutral-200 dark:border-neutral-800 rounded-2xl px-3 py-1.5 w-fit hover:bg-neutral-100 dark:hover:bg-neutral-800">
-                            <LuBrainCircuit /> AI Engineer @ CGI
+                        {/* Meta row: Role (filled badge) + Location (plain link) */}
+                        <div className="flex flex-wrap items-center gap-3 font-medium lg:text-3xl sm:text-2xl text-xl">
+                            {/* Role badge — visually distinct from tags */}
+                            <span className="inline-flex items-center gap-2 ">
+                                  AI Engineer
+                            </span>
+
+                            {/* sep */}
+                            <span
+                                aria-hidden
+                                className="hidden md:inline-block h-5 w-px bg-neutral-300 dark:bg-neutral-700 "
+                            />
+
+                            {/* Location — text link, not a chip */}
+                            <span className="inline-flex items-center gap-2">
+                                  Frankfurt Main
+                            </span>
                         </div>
 
-                        {/* Subhead: location with clickable icon */}
-                        <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-                            <Link
-                                href="https://www.google.com/maps?q=Frankfurt+am+Main%2C+Germany"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="group inline-flex items-center gap-2 rounded-full border border-neutral-200 dark:border-neutral-800 px-3 py-1.5 transition hover:bg-neutral-100 dark:hover:bg-neutral-800"
-                            >
-                                <FiMapPin className="shrink-0 text-base group-hover:scale-110 transition" aria-hidden />
-                                <span>Frankfurt Main, Germany</span>
-                            </Link>
-                        </div>
-
-                        <h2 className="flex flex-wrap items-center text-gray-500 text-xl font-extrabold tracking-tight sm:text-xl lg:text-xl"> Key Skills</h2>
                         {/* Key Skills */}
-                        <div className="flex flex-wrap items-center gap-3">
-                            <Item>Python</Item>
-                            <Item>Data Science</Item>
-                            <Item>Machine Learning</Item>
-                            <Item>Deep Learning</Item>
-                            <Item>Computer Vision</Item>
-                            <Item>GenAI</Item>
-                            <Item>AI-Agents</Item>
-                            <Item>API Development</Item>
-                            <Item>Remote Sensing</Item>
+                        <div className="space-y-2">
+                            <h2 className="font-bold tracking-wider text-neutral-500 dark:text-neutral-400 uppercase ">
+                                Key Skills
+                            </h2>
+                            <div className="flex flex-wrap items-center gap-2">
+                                <Item>Python</Item>
+                                <Item>Data Science</Item>
+                                <Item>Machine Learning</Item>
+                                <Item>Deep Learning</Item>
+                                <Item>Computer Vision</Item>
+                                <Item>GenAI</Item>
+                                <Item>AI-Agents</Item>
+                                <Item>API Development</Item>
+                                <Item>Remote Sensing</Item>
+                            </div>
                         </div>
                     </div>
                 </div>
