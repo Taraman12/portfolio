@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { TopBarButton } from "./TopBarButton";
-import { FiDownload, FiGlobe } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 
-export function TopBarMenu() {
+export function TopBarResume() {
     const [isOpen, setIsOpen] = useState(false);
     const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
